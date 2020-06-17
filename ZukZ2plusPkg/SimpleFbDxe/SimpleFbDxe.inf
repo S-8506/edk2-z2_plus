@@ -16,7 +16,7 @@
   MdeModulePkg/MdeModulePkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
   ArmPkg/ArmPkg.dec
-  XiaomiMIXPkg/XiaomiMIXPkg.dec
+  ZukZ2plusPkg/ZukZ2plusPkg.dec
 
 [LibraryClasses]
   BaseLib
@@ -35,9 +35,9 @@
   gEfiCpuArchProtocolGuid
 
 [FixedPcd]
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferAddress
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
 
 [Guids]
   gEfiMdeModulePkgTokenSpaceGuid

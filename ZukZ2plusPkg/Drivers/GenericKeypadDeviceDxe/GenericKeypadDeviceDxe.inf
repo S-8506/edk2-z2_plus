@@ -14,7 +14,7 @@
   MdePkg/MdePkg.dec
   ArmPkg/ArmPkg.dec
   EmbeddedPkg/EmbeddedPkg.dec
-  XiaomiMIXPkg/XiaomiMIXPkg.dec
+  ZukZ2plusPkg/ZukZ2plusPkg.dec
 
 [LibraryClasses]
   UefiDriverEntryPoint

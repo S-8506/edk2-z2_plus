@@ -11,7 +11,7 @@
 [Packages]
   MdePkg/MdePkg.dec
   ArmPkg/ArmPkg.dec
-  XiaomiMIXPkg/XiaomiMIXPkg.dec
+  ZukZ2plusPkg/ZukZ2plusPkg.dec
 
 [LibraryClasses]
   ArmLib
@@ -22,9 +22,9 @@
   CacheMaintenanceLib
 
 [Pcd]
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferAddress
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferAddress
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferWidth
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferHeight
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferPixelBpp
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferVisibleWidth
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferVisibleHeight

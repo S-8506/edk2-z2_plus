@@ -35,7 +35,7 @@
 [Packages]
   MdePkg/MdePkg.dec
   MdeModulePkg/MdeModulePkg.dec
-  XiaomiMIXPkg/XiaomiMIXPkg.dec
+  ZukZ2plusPkg/ZukZ2plusPkg.dec
 
 [LibraryClasses]
   MemoryAllocationLib

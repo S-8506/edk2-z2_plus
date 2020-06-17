@@ -37,7 +37,7 @@
   ArmPlatformPkg/ArmPlatformPkg.dec
   MdeModulePkg/MdeModulePkg.dec
   MdePkg/MdePkg.dec
-  XiaomiMIXPkg/XiaomiMIXPkg.dec
+  ZukZ2plusPkg/ZukZ2plusPkg.dec
 
 [LibraryClasses]
   ArmLib

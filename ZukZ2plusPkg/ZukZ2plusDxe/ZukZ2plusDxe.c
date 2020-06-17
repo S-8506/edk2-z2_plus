@@ -34,7 +34,7 @@
 #include <Protocol/LoadedImage.h>
 #include <Protocol/PlatformBootManager.h>
 
-#include "XiaomiMIXDxe.h"
+#include "ZukZ2plusDxe.h"
 
 EFI_CPU_ARCH_PROTOCOL     *gCpu;
 

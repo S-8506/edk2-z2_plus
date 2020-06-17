@@ -16,7 +16,7 @@
 #
 ################################################################################
 [Defines]
-  PLATFORM_NAME                  = XiaomiMIXPkg
+  PLATFORM_NAME                  = ZukZ2plusPkg
   PLATFORM_GUID                  = 28f1a3bf-193a-47e3-a7b9-5a435eaab2ee
   PLATFORM_VERSION               = 0.1
   DSC_SPECIFICATION              = 0x00010019
@@ -24,13 +24,13 @@
   SUPPORTED_ARCHITECTURES        = ARM
   BUILD_TARGETS                  = DEBUG|RELEASE
   SKUID_IDENTIFIER               = DEFAULT
-  FLASH_DEFINITION               = XiaomiMIXPkg/XiaomiMIXPkg.fdf
+  FLASH_DEFINITION               = ZukZ2plusPkg/ZukZ2plusPkg.fdf
 
-!include XiaomiMIXPkg/CommonDsc.dsc.inc
+!include ZukZ2plusPkg/CommonDsc.dsc.inc
 
 [LibraryClasses.common]
   ArmLib|ArmPkg/Library/ArmLib/ArmBaseLib.inf
-  ArmPlatformLib|XiaomiMIXPkg/Library/XiaomiMIXLib/XiaomiMIXLib.inf
+  ArmPlatformLib|ZukZ2plusPkg/Library/ZukZ2plusLib/ZukZ2plusLib.inf
   CompilerIntrinsicsLib|ArmPkg/Library/CompilerIntrinsicsLib/CompilerIntrinsicsLib.inf
   CapsuleLib|MdeModulePkg/Library/DxeCapsuleLibNull/DxeCapsuleLibNull.inf
   UefiBootManagerLib|MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf
@@ -43,7 +43,7 @@
   DxeServicesLib|MdePkg/Library/DxeServicesLib/DxeServicesLib.inf
   BootLogoLib|MdeModulePkg/Library/BootLogoLib/BootLogoLib.inf
 
-  SerialPortLib|XiaomiMIXPkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
+  SerialPortLib|ZukZ2plusPkg/Library/InMemorySerialPortLib/InMemorySerialPortLib.inf
   RealTimeClockLib|EmbeddedPkg/Library/VirtualRealTimeClockLib/VirtualRealTimeClockLib.inf
   TimeBaseLib|EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf
 
@@ -66,8 +66,8 @@
   # SimpleFbDxe
   FrameBufferBltLib|MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf
 
-  SerialPortLib|XiaomiMIXPkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
-  PlatformBootManagerLib|XiaomiMIXPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
+  SerialPortLib|ZukZ2plusPkg/Library/FrameBufferSerialPortLib/FrameBufferSerialPortLib.inf
+  PlatformBootManagerLib|ZukZ2plusPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf
 
 [LibraryClasses.common.SEC]
   PrePiLib|EmbeddedPkg/Library/PrePiLib/PrePiLib.inf
@@ -137,9 +137,9 @@
   #
   gEfiMdeModulePkgTokenSpaceGuid.PcdEmuVariableNvModeEnable|TRUE
 
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x80400000
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
-  gXiaomiMIXPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2040
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferAddress|0x80400000
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferWidth|1080
+  gZukZ2plusPkgTokenSpaceGuid.PcdMipiFrameBufferHeight|2040
 
   gEfiMdeModulePkgTokenSpaceGuid.PcdAcpiExposedTableVersions|0x20
 
@@ -202,8 +202,8 @@
   #
   EmbeddedPkg/Drivers/VirtualKeyboardDxe/VirtualKeyboardDxe.inf
 
-  XiaomiMIXPkg/XiaomiMIXDxe/XiaomiMIXDxe.inf
-  XiaomiMIXPkg/SimpleFbDxe/SimpleFbDxe.inf
+  ZukZ2plusPkg/ZukZ2plusDxe/ZukZ2plusDxe.inf
+  ZukZ2plusPkg/SimpleFbDxe/SimpleFbDxe.inf
 
   #
   # USB Host Support
@@ -241,12 +241,12 @@
   MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf
   MdeModulePkg/Universal/Acpi/AcpiPlatformDxe/AcpiPlatformDxe.inf
   MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf
-# XiaomiMIXPkg/AcpiTables/AcpiTables.inf
+# ZukZ2plusPkg/AcpiTables/AcpiTables.inf
 
   #
   # SMBIOS Support
   #
-  XiaomiMIXPkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
+  ZukZ2plusPkg/Drivers/SmbiosPlatformDxe/SmbiosPlatformDxe.inf
   MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf
 
   #
@@ -269,7 +269,7 @@
       NULL|MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf
       PcdLib|MdePkg/Library/DxePcdLib/DxePcdLib.inf
   }
-  XiaomiMIXPkg/Drivers/LogoDxe/LogoDxe.inf
+  ZukZ2plusPkg/Drivers/LogoDxe/LogoDxe.inf
 
   ShellPkg/Application/Shell/Shell.inf {
     <LibraryClasses>
